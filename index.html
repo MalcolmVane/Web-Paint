@@ -7,11 +7,6 @@
       body{
         margin: 0;
       }
-      .dashboard {
-        position: absolute;
-        height: 100;
-        width: 100%;
-      }
       button {
         outline: none;
         border: none;
@@ -20,13 +15,17 @@
         width: 20px;
         margin: 10px;
       }
+      .eraser {
+        border-style: solid;
+border-color: black;
+      }
     </style>
   </head>
   <body>
     <canvas></canvas>
     <script src="script.js"></script>
     <div class="dashboard">
-      <button type="button" style="background: #c12dce;"onclick="color = '#c12dce'"></button>
+      <button type="button" style="background: #c12dce;"onclick="colr = '#c12dce'"></button>
       <button type="button" style="background: #2d38ce;"onclick="color = '#2d38ce'"></button>
       <button type="button" style="background: #3dce2d;"onclick="color = '#3dce2d'"></button>
       <button type="button" style="background: #ce2d2d;"onclick="color = '#ce2d2d'"></button>
@@ -35,7 +34,6 @@
       <button type="button" style="background: #8e1c7d;"onclick="color = '#8e1c7d'"></button>
       <button type="button" style="background: #571c8e;"onclick="color = '#571c8e'"></button>
       <button type="button" style="background: #880aff;"onclick="color = '#880aff'"></button>
+      <button type="button" class="eraser" onclick="color = 'white'"></button>
       <input min="2" max ="100" type="range" name="" value="2" onchange="rad = document.querySelector('input').value;">
     </div>
-  </body>
-</html>
