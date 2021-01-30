@@ -1,7 +1,7 @@
 const canvas = document.querySelector('canvas');
 const ctx = canvas.getContext('2d');
 canvas.width = innerWidth;
-canvas.height = innerHeight - 500;
+canvas.height = innerHeight - 100;
 var color = 'hotpink';
 var rad = 5;
 
